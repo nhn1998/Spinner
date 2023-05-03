@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Spinner</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="">
-    <div class="container">
-        <div class="spinBtn" id="spinBtn">spin</div>
-        <div class="wheel ">
-            <div class="number" style="--i:1;--clr:#db7093"><span">100</span></div>
-            <div class="number" style="--i:2;--clr:black"><span">10</span></div>
-            <div class="number" style="--i:3;--clr:blue"><span">7</span></div>
-            <div class="number" style="--i:4;--clr:red"><span">80</span></div>
-            <div class="number" style="--i:5;--clr:yellow"><span">30</span></div>
-            <div class="number" style="--i:6;--clr:orange"><span">27</span></div>
-            <div class="number" style="--i:7;--clr:red"><span">85</span></div>
-            <div class="number" style="--i:8;--clr:gray"><span">76</span></div>
+<body>
+    <div class="mainbox" id="mainbox">
+        <div class="box" id="box">
+            <div class="box1">
+                <span class="font span1"><h5>100</h5></span>
+                <span class="font span2"><h5>95</h5></span>
+                <span class="font span3"><h5>27</h5></span>
+                <span class="font span4"><h5>13</h5></span>
+                <span class="font span5"><h5>39</h5></span>
+            </div>
+            <div class="box2">
+                <span class="font span1"><h5>60</h5></span>
+                <span class="font span2"><h5>11</h5></span>
+                <span class="font span3"><h5>33</h5></span>
+                <span class="font span4"><h5>71</h5></span>
+                <span class="font span5"><h5>85</h5></span>
+            </div>
+            <button class="spin" onclick="spin()">SPIN</button>
         </div>
     </div>
+    <audio controls="controls" id="applause" src="applause.mp3" type="audion/mp3"></audio>
+    <audio controls="controls" id="wheel" src="wheel.mp3" type="audion/mp3"></audio>
 </body>
-
-<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
 </html>
